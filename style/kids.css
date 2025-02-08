@@ -1,6 +1,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
+ @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+  
+.raleway-font {
+  font-family: "Raleway", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}      
+
 
 .quicksand-font {
     font-family: "Quicksand", serif;
@@ -8,6 +17,7 @@
     font-weight: <weight>;
     font-style: normal;
   }
+  
   .whole-back{
    margin-left: 140px;
    margin-right: 140px;
@@ -67,6 +77,9 @@
   }
   
 /* banner section */
+.whole-bg{
+  
+}
 .banner{
     display: flex;
     justify-content: space-between;
@@ -123,7 +136,8 @@ section div img{
 /* Standard curriculam section */
 .curriculum{
   background-image: url(assets/bg.png);
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
   justify-content: space-between;
   gap: 28.5px;
 }
@@ -176,6 +190,93 @@ font-size: 24.5;
   font-weight: 700;
   font-size: 15.09px;
 }  
+/* Storied section */
+.stories{
+  background: linear-gradient(to bottom,#FFFFFF,rgba(222, 171, 83, 0.932)); 
+}
+.no-margin{
+  margin: none;
+}
+.fun-toodler{
+  width: 540px;
+  height: 630px;
+  border-bottom-left-radius:16px ;
+  border-bottom-right-radius: 16px;
+}
+.toodler-color{
+  margin-top: none;
+  background-color: #FFFFFF;
+  height: 293px;
+  padding: 58px 38px 39px 39px;
+}
+.toodler-caption{
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 48px;
+}
+.sky-blue-btn{
+  background-color: #3CD8E8;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 49px;
+  max-width: 174px;
+  height: 48px;
+  font-size: 16px;
+  font-weight: 300;
+  margin-left:39px;
+  margin-bottom:-20px;
+  margin-top: -100px;
+  
+}
+.toodler-descrip{
+  margin-bottom: 34.5px;
+  font-size: 15.34px;
+  font-weight:200;
+}
+.story-1 img{
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  margin-bottom:-24px;
+}
+.short-story{
+  max-width: 290.69px;
+  height: 301px;
+}
+.short-story img{
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius:0px;
+}
+.story-title{
+  font-size: 15.34px;
+  font-weight: 700;
+  height: 213px;
+  background-color:#FFFFFF;
+  margin-top: none;
+}
+.btn-green{
+  background-color: #95B226;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 48px;
+  font-size: 15.34px;
+  font-weight: 200;
+  padding: 5px;
+  margin-left: 38.35px;
+}
+.btn-navilue{
+  background-color: #5D58F0;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 48px;
+  font-size: 15.34px;
+  font-weight: 200;
+  padding: 5px;
+  margin-left: 38.35px;
+  margin-top: -15px;
+  margin-bottom:-45px;
+}
+
+
 
 
 @media screen and (max-width:390px) {
@@ -243,6 +344,16 @@ font-size: 24.5;
     height: auto;
 
    }
-   /* main>section>img{ */
+  /* Standard curriculam section */
+  .student-curriculam{
+    justify-items: ;
+  }
+  .curriculum{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
     
+}
+/* Stories section */
+.fun-toodler{
+  display: none;
 }
