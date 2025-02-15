@@ -345,6 +345,43 @@ font-size: 24.5;
   align-items: center;
 
 }
+/* Fotter section */
+.last-part{
+  background-color: #01ACFD;
+  color: #FFFFFF;
+  
+  padding: 123px 174px 140px 228.09px;
+  
+}
+.conclusion{
+  display: flex;
+  justify-content: space-between;
+
+}
+.hamstar{
+  display: flex;
+}
+.kids-education{
+  font-weight: 700;
+  font-size: 42.14px;
+}
+.final-dscrip{
+  width: 400px;
+  font-size: 20px;
+  font-weight: 200;
+}
+.about-school{
+  list-style: none;
+  
+}
+.about-sch{
+  font-size: 24px;
+  font-weight: 700;
+}
+.hamster img{
+  width: 82.9px;
+  height: 81.65px;
+}
 
 
 
@@ -428,4 +465,5 @@ font-size: 24.5;
 /* Stories section */
 .fun-toodler{
   display: none;
+}
 }
