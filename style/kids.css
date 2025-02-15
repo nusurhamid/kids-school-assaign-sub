@@ -1,22 +1,21 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+.quicksand-font {
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-weight:<300>;
+  font-style: normal;
+}
 
- @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-  
 .raleway-font {
   font-family: "Raleway", serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: <100>;
   font-style: normal;
-}      
+}
 
 
-.quicksand-font {
-    font-family: "Quicksand", serif;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-style: normal;
-  }
+
+
   
   .whole-back{
    margin-left: 140px;
@@ -38,6 +37,14 @@
     width: 100%;
     
   }
+  .nav-bar{
+    display: flex;
+    
+    gap: 32px;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+  }
   .nav-item{
     font-size: 20px;
     display: flex;
@@ -50,6 +57,7 @@
   .nav-1{
     color: rgba(254, 163, 1, 1);
     font-weight: 700;
+
   }
     
   .nav-2{
@@ -142,6 +150,7 @@ section div img{
   gap: 28.5px;
 }
 .standard{
+  
     text-align: center;
     margin-top: 60px;
     margin-bottom: 80px;
@@ -193,9 +202,21 @@ font-size: 24.5;
 /* Storied section */
 .stories{
   background: linear-gradient(to bottom,#FFFFFF,rgba(222, 171, 83, 0.932)); 
+   
+}
+.academic-story{
+  display: flex; 
+ justify-content:space-between; 
+ align-items: center;
+}
+.stories-parent{
+  display: grid;
+  grid-template-columns: repeat(2,2fr);
+  
 }
 .no-margin{
-  margin: none;
+  margin-right: none;
+  margin-left: none;
 }
 .fun-toodler{
   width: 540px;
@@ -206,8 +227,10 @@ font-size: 24.5;
 .toodler-color{
   margin-top: none;
   background-color: #FFFFFF;
-  height: 293px;
+  height: 210px;
   padding: 58px 38px 39px 39px;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
 }
 .toodler-caption{
   font-size: 24px;
@@ -232,6 +255,7 @@ font-size: 24.5;
   margin-bottom: 34.5px;
   font-size: 15.34px;
   font-weight:200;
+  
 }
 .story-1 img{
   border-bottom-right-radius: 0px;
@@ -241,17 +265,29 @@ font-size: 24.5;
 .short-story{
   max-width: 290.69px;
   height: 301px;
+  margin: 20px;
+  position: relative;
+  
+ 
 }
 .short-story img{
   border-bottom-right-radius: 0px;
   border-bottom-left-radius:0px;
+  
+  border-top: -100px;
+  margin-bottom:-20px ;
 }
 .story-title{
   font-size: 15.34px;
   font-weight: 700;
-  height: 213px;
+  height: 60px;
+  
   background-color:#FFFFFF;
-  margin-top: none;
+ 
+  margin-top: -15px;
+  padding: 38px;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
 }
 .btn-green{
   background-color: #95B226;
@@ -262,6 +298,18 @@ font-size: 24.5;
   font-weight: 200;
   padding: 5px;
   margin-left: 38.35px;
+  position: relative;
+  
+  
+
+  
+  
+  margin-left: 38.35px;
+  margin-top: -100px;
+  margin-bottom: -15px;
+  
+  width: 174.5px;
+  height: 38.25px;
 }
 .btn-navilue{
   background-color: #5D58F0;
@@ -271,11 +319,32 @@ font-size: 24.5;
   font-size: 15.34px;
   font-weight: 200;
   padding: 5px;
+  position: relative;
   margin-left: 38.35px;
-  margin-top: -15px;
-  margin-bottom:-45px;
+  margin-top: -100px;
+  margin-bottom: -15px;
+  width: 174.5px;
+  height: 38.25px;
 }
+.view-btn{
+  
+  background-color: black;
+  width: 197px;
+  height: 50px;
+  padding: 10px;
+  border: none;
+  border-radius: 12px;
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 80px;
+  margin-left: 500px;
+  margin-bottom: 60px;
+  
+  align-items: center;
 
+}
 
 
 
@@ -346,7 +415,10 @@ font-size: 24.5;
    }
   /* Standard curriculam section */
   .student-curriculam{
-    justify-items: ;
+    text-align: center;
+  }
+  .standard{
+    text-align: center;
   }
   .curriculum{
     display: grid;
